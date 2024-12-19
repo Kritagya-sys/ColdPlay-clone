@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="store.css">
+    <style>
+        body{
+            font-family: "louize", "Georgia", "Times", "Times New Roman", serif;
+           background-color: #0c3874;
+           color: white;
+           height: 100vh;
+           margin: 0;
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            gap: 12px;
+            padding: 7px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+        }
+        .tour{
+            padding: 8px;
+            z-index: 1000;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .news{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .music{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .signup{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .store{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .navimg{
+            display: block;
+            height: 23px;
+            margin-left: 540px;
+            margin-top: 5px;
+            z-index: 1000;
+        }
+        .coldplay{
+            font-size:x-large;
+        }
+        .mailer{
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 20px;
+        }
+        .mailerhead{
+            font-size: 60px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .mailerpara{
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+        .top{
+            position: fixed;
+            top: 0px;
+            z-index: -1;
+        }
+        .threebox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .phone{
+            height: 48px;
+            width: 670px;
+            text-align: center;
+            font-size: 17px;
+            background-color: rgba(255, 255, 255, 0.0);
+            color: white;
+            border-width: 1.5px;
+            border-color: white;
+        }
+        .phone:hover{
+            border-color: yellow;
+        }
+        .phone::placeholder{
+            color: rgb(139, 133, 133);
+        }
+        .checkbox{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            align-items: center;
+        }
+        .check1{
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+        }
+        .check2,.check1{
+            display: flex;
+            justify-content: center;
+            margin-left: 30px;
+            height: 50px;
+            width: 780px;
+            align-items: center;
+            font-size: smaller;
+        }
+        .checkcontainer{
+            display: flex;
+            flex-direction: row;
+            gap: px;
+        }
+        .checkone,.checktwo{
+            height: 20px;
+            width: 20px;
+            margin-top: 10px;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 570px;
+            margin-top: 60px;
+            height: 55px;
+            width: 180px;
+            background-color: #11305b;
+            border-width: 0;
+            color: white;
+            font-size:x-large;
+            transition: ease-in-out 0.2s;
+            font-family: 'Albertus', serif;
+        }
+        .submit:hover{
+            background-color: #10213a;
+        }
+        .footer {
+    background-color: #0c3874;
+    color: #ffffff;
+    padding: px 0;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white; /* Optional: Accent color for headings */
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00; /* Highlight link on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.footer{
+    background-color: rgba(17, 48, 91, 0.4);
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+           <ul class="list">
+            <li class="coldplay">COLDPLAY</li>
+            <li class="tour">TOUR</li>
+            <li class="news">NEWS</li>
+            <LI class="music">MUSIC</LI>
+            <LI class="signup">SIGN UP</LI>
+            <li class="store" id="store5">STORE</li>
+            <img class="navimg" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/moons.webp">
+            </ul>
+        </nav>
+        <div class="mailer">
+            <p class="mailerhead">MAiLER</p>
+            <P class="mailerpara">If you’d like to keep right up to date with all the latest Coldplay news,<br>
+                gigs, releases and competitions then sign up to our mailing list and<br> we’
+                ll be in touch.
+            </P>
+        </div>
+        <img class="top" src="./top.png">
+        <div class="threebox">
+            <input class="phone" placeholder="EMAIL" >
+            <input class="phone" placeholder="PHONE NUMBER" >
+            <input class="phone" placeholder="SELECT A COUNTRY/REGION">
+        </div>
+        <div class="checkbox">
+            <div class="checkcontainer">
+            <input type="checkbox" class="checkone" >
+            <div class="check1">
+                <label for="checkone">I agree to receive personalized updates and marketing messages about 
+                Coldplay based on my information, interests, activities, website visits and device data.
+                For more information about how we use your personal information, please see our Privacy
+                Policy.</label>
+            </div>
+            </div>
+                <br>
+            <div class="checkcontainer">
+            <input type="checkbox" class="checktwo">
+            <div class="check2">
+                <label for="checktwo">By providing my phone number above, I agree that I am 13+ and agree to
+                receive recurring messages via SMS or WhatsApp from or on behalf of Coldplay, and agree
+                to Community's Terms/Privacy Community.Com/Terms Message frequency varies. Consent is
+                not a condition of Purchase. Message and data rates apply, message help for Help, stop
+                to opt-out.</label>
+            </div>
+            </div>
+        </div>
+        <div>
+            <button class="submit">SiGN UP</button>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>about us</h2>
+                    <p>
+                        This is the official Coldplay Store, designed to offer fans
+                        exclusive merchandise and albums. 
+                    </p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact</h2>
+                    <p>Email: support@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 YourWebsite | All Rights Reserved
+            </div>
+        </footer>
+</body>
+</html>

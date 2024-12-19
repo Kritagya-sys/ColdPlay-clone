@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="coldplay.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Coldplay</title>
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        .navbar{
+            z-index: 1000;
+        }
+        body{
+            font-family: "louize", "Georgia", "Times", "Times New Roman", serif;
+           background-color: #0c3874;
+           color: white;
+           
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            gap: 12px;
+            padding: 7px;
+            z-index: 1000;
+        }
+        .coldplay{
+            font-size: 27px;
+            z-index: 1000;
+        }
+        .tour{
+            padding: 8px;
+            z-index: 1000;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+        .news{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .music{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .signup{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .store{
+            padding: 8px;
+            z-index: 1000;
+            cursor:pointer;
+        }
+        .navimg{
+            display: block;
+            height: 23px;
+            margin-left: 540px;
+            margin-top: 5px;
+            z-index: 1000;
+        }
+        .topic{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1000;
+        }
+        #moonmusic{
+            z-index: 1000;
+            margin-bottom: 900px;
+        }
+        #para{
+            font-size: 22px;
+            margin-top: 15px;
+            font-weight: 100;
+            z-index: 1000;
+        }
+        .slogo{
+            height: 30px;
+            z-index: 1000;
+        }
+        .love{
+           position: absolute;
+           margin-left: 900px;
+           top: 180px;
+           z-index: -1;
+        }
+        .banner{
+            position:relative;
+            width: 100%;
+            margin-top: 84px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .heart{
+            position: absolute;
+            z-index: 1000;
+            margin-left: 250px;
+            height: 180px;
+            z-index: 1000;
+        }
+        .p1{
+            height: 200px;
+            width: 200px;
+        }
+        .p2{
+            height: 200px;
+            width: 200px;
+        }
+        .p3{
+            height: 200px;
+            width: 200px;
+        }
+        .p4{
+            height: 200px;
+            width: 200px;
+        }
+        .p5{
+            height: 200px;
+            width: 200px;
+        }
+        .p6{
+            height: 200px;
+            width: 200px;
+        }
+        .p7{
+            height: 200px;
+            width: 200px;
+        }
+        .coursal-items{
+            display: flex;
+            flex-direction: row;
+            gap: 13px;
+        }
+        .coursal{
+            margin-top: 100px;
+        }
+        .first{
+            background-color: rgba(51, 51, 151, 0.9);
+            height: 400px;
+        }
+        .second{
+            background-color: rgba(185, 185, 235, 0.6);
+        }
+        .third{
+            background-color: rgb(44, 44, 93,0.6);
+        }
+        .fourth{
+            background-color: rgb(44, 44, 93,0.6);
+        }
+        .fifth{
+            background-color: rgb(44, 44, 93,0.6);
+        }
+        .sixth{
+            background-color: rgb(44, 44, 93,0.6);
+        }
+        .seventh{
+            background-color: rgb(44, 44, 93,0.6);
+        }
+        .effect{
+            height: 300px;
+            z-index: index 0;
+        }
+        .t1{
+            margin-left: 20px;
+        }
+        .t2{
+            margin-left: 20px;
+        }
+        .t3{
+            margin-left: 20px;
+        }
+        .t4{
+            margin-left: 20px;
+        }
+        .t5{
+            margin-left: 20px;
+        }
+        .t6{
+            margin-left: 20px;
+        }
+        .t7{
+            margin-left: 20px;
+        }
+        .b1{
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 55px;
+            border: solid yellow;
+            border-width: 1px;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            margin-left: 43px;
+        }.b2{
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 55px;
+            border: solid yellow;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            border-width: 1px;
+            margin-left: 43px;
+        }
+        .b3{
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 55px;
+            border: solid yellow;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            border-width: 1px;
+            margin-left: 43px;
+        }
+        .b4{
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 55px;
+            border: solid yellow;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            border-width: 1px;
+            margin-left: 43px;
+        }
+        .b5{
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 75px;
+            border: solid yellow;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            border-width: 1px;
+            margin-left: 43px;
+        }
+        .b6{
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 55px;
+            border: solid yellow;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            border-width: 1px;
+            margin-left: 43px;
+        }
+        .b7{
+
+            border-radius: 20px;
+            height: 35px;
+            width: 90px;
+            margin-top: 75px;
+            border: solid yellow;
+            background-color: rgb(44, 44, 93,0.6);
+            color: yellow;
+            border-width: 1px;
+            margin-left: 43px;
+        }
+        .first,.second,.third,.fourth,.fifth,.sixth,.seventh{
+            transition: transform 0.3s, box-shadow 0.3s; 
+            background-color: rgb(44, 44, 93,0.8);
+        }
+        .first:hover, .second:hover, .third:hover, .fourth:hover, .fifth:hover, .sixth:hover, .seventh:hover {
+         transform: scale(1.05); 
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+        }
+        .midimage{
+            margin-left: 500px;
+            height: 36px;
+            margin-top: 10px;
+        }
+        .firstdiv{
+            height: 540px;
+            width: 305px;
+            background-color: rgb(44, 44, 93,0.6);
+            border-radius: 15px;
+        }
+        .secdiv{
+            height: 540px;
+            width: 305px;
+            background-color: rgb(44, 44, 93,0.6);
+            border-radius: 15px;
+        }
+        .thirddiv{
+            height: 540px;
+            width: 305px;
+            background-color: rgb(44, 44, 93,0.6);
+            border-radius: 15px;
+        }
+        .fordiv{
+            height: 540px;
+            width: 305px;
+            background-color: rgb(44, 44, 93,0.6);
+            border-radius: 10px;
+        }
+        .chaardiv{
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            width: 100%;
+        }
+        .firstimg{
+            height: 380px;
+            width: 308px;
+            border-radius: 15px;
+        }
+        .secimg{
+            height: 380px;
+            width: 308px;
+            border-radius: 15px;
+        }
+        .thirdimg{
+            height: 380px;
+            width: 308px;
+            border-radius: 15px;
+        }
+        .forimg{
+            height: 380px;
+            width: 308px;
+            border-radius: 15px;
+        }
+        .fi,.s,.t,.f{
+            font-size: larger;
+            color: rgb(189, 189, 189);
+        }
+        .fit,.sit,.tit,.fot{
+            font-size: larger;
+            margin-top: 70px;
+        }
+        .chaardiv{
+            margin-top: 14px;
+            width: 30p;
+        }
+        .firstdiv:hover, .secdiv:hover, .thirddiv:hover, .fordiv:hover{
+         transform: scale(1.05); 
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+        }
+        .firstdiv,.secdiv,.thirddiv,.fordiv{
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+        .fit{
+            margin-left: 15px;
+        }
+        .sit{
+            margin-left: 15px;
+        }
+        .tit{
+            margin-left: 15px;
+        }
+        .fot{
+            margin-left: 15px;
+        }
+        .mailer{
+            height: 300px;
+            width: 100%;
+            margin-top: 100px;
+            background-color: rgb(44, 44, 93,0.6);
+            display: flex;
+            flex-direction: column;
+
+        }
+        .mailerhead{
+            font-size: 59px;
+            display: flex;
+            justify-content: center;
+            color: aqua;
+            
+        }
+        .bud{
+            height: px;
+            width: 100px;
+            display: flex;
+            margin-left: 120px;
+        }
+        .mailerpara{
+            display: flex;
+            justify-content: center;
+            font-size: large;
+        }
+        .sign{
+            border-radius: 25px;
+            width: 150px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            margin-left: 550px;
+            margin-bottom: 190px;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: aliceblue;
+        }
+        .app{
+            height: 200px;
+            width: 100%;
+            background-image:  url('https://www.coldplay.com/wp/wp-content/uploads/2024/06/RAINBOW-TWIRL@2x-1-2048x250.webp'); 
+            background-size: cover;
+            background-position: center;
+            margin-top: 60px;
+        }
+        .apphead{
+            font-size: 25px;
+        }
+        .apppara{
+            font-size: 15px;
+        }
+        .DOWNLOAD{
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: aliceblue;
+            border-color: aliceblue;
+            border-width: 1px;
+            
+        }
+        .app{
+            padding: 15px;
+        }
+        .flower{
+            height: 150px;
+            margin-left: 900px;
+        }
+        .bud{
+            height: 60px;
+            margin-left: 140px;
+        }
+        .footer{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(44, 44, 93,0.6);
+            margin-top: 60px;
+        }
+        .footer-elements{
+            list-style: none;
+            padding-top: 20px;
+            font-size: 12px;
+            font-weight: 100;
+            color: rgb(168, 166, 166);
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+        }
+        .downimginfooter{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            padding-right: 13px;
+        }
+        .table{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .table1,.table2,.table3,.table4,.table5,.table6{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(44, 44, 93,0.6);
+            display: flex;
+            flex-direction: row;
+        }
+        .pt1,.pt2,.pt3,.pt4,.pt5,.pt6{
+            color: aliceblue;
+            padding-top: 28px;
+            padding-left: 20px;
+        }
+        .venue1,.venue2,.venue3,.venue4,.venue5,.venue6{
+            display: flex;
+            display: block;
+            justify-content: center;
+            margin-left: 250px;
+            color: aliceblue;
+            padding-top: 28px;
+        }
+        .more1,.more2,.more3,.more4,.more5,.more6{
+            display: flex;
+            display: block;
+            margin-left: auto;
+            margin-right: 30px;
+            color: aliceblue;
+            padding-top: 28px;
+        }
+        .span1{
+            color: goldenrod;
+        }
+        .span2{
+            color: rgb(101, 207, 101);
+        }
+        .span3{
+            color: aqua;
+        }
+        .span4{
+            color: rgb(201, 243, 129);
+        }
+        .span5{
+            color: rgb(236, 98, 236);
+        }
+        .span6{
+            color: rgb(162, 89, 231);
+        }
+        .table1:hover,.table2:hover,.table3:hover,.table4:hover,.table5:hover,.table6:hover{
+            background-color: #0a2954;
+            transform: scale(1.05); 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tourdates{
+            display: flex;
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+        .tourdateclass{
+            display: flex;
+            gap: px;
+        }
+        .tourflower{
+            height: 40px;
+            display: flex;
+            margin-top: 28px;
+        }
+        .seeall{
+            margin-top: 41px;
+            font-size: 15px;
+            margin-left: 15px;
+        }
+        .tour:hover{
+            color: rgb(206, 102, 206);
+        }
+        .news:hover{
+            color: rgb(231, 206, 67);
+        }
+        .music:hover{
+            color: aqua;
+        }
+        .signup:hover{
+            color: greenyellow;
+        }
+        .store:hover{
+            color: rgb(119, 173, 239);
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .topeffect{
+            
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+            height: 10px;
+            width: 30px;
+        }
+        .effectbottom1{
+            position:relative;
+            z-index: -1;
+            height: 10px;
+            width: 10px;
+        }
+        .effectbottom2{
+            position: relative;
+            z-index: -1;
+            height: 10px;
+            width: 10px;
+        }
+        .flower{
+            display: flex;
+            justify-content: center;
+            height: 150px;
+            width: 150px;
+            margin-right: 350px;
+        }
+        .b1:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .b2:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .b3:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .b4:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .b5:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .b6:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .b7:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .body{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .effectbottom1.effectbottom2.topeffect{
+            width: 100%;
+        }
+        
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="body">
+
+        <nav class="navbar">
+           <ul class="list">
+            <li class="coldplay">COLDPLAY</li>
+            <li class="tour">TOUR</li>
+            <li class="news">NEWS</li>
+            <LI class="music">MUSIC</LI>
+            <LI class="signup" id="signup4">SIGN UP</LI>
+            <li class="store" id="store5">STORE</li>
+            <img class="navimg" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/moons.webp">
+            </ul>
+        </nav>
+        <div class="topeffect">
+            <img src="./top.png" alt="">
+        </div>
+        <div class="topic">
+            <img class="moonmusic" src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/Image-163@2x-600x69.png">
+            <P id="para">THE NEW ALBUM - OUT NOW</P>
+            <img class="slogo" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/doodles.webp">
+        </div>
+        <div class="love">
+            <img src="./loveimport.png" width="345px">
+        </div>
+        <div class="coursal">
+            <div class="coursal-items">
+                <div class="first">
+                    <img class="p1" src="https://www.coldplay.com/wp/wp-content/uploads/2024/09/Amazon-Exclusive-Translucent-Blue--1024x1024.webp">
+                    <p class="t1">BLUE MOON MUSiC
+                        ECORECORD LP
+                    </p>
+                    <button class="b1">order</button>
+                </div>
+                <div class="second">
+                    <img class="p2" src="https://www.coldplay.com/wp/wp-content/uploads/2024/09/UK-Indies-Translucent-Bright-Red-LP-1024x1024.webp">
+                    <p class="t2">YELLO MOON MUSiC
+                        ECORECORD LP
+                    </p>
+                    <button class="b2">order</button>
+                </div>
+                <div class="third">
+                    <img class="p3" src="https://www.coldplay.com/wp/wp-content/uploads/2024/09/HMV-Exclusive-Translucent-Yellow-1024x1024.webp">
+                    <P class="t3">YELLOW MOON MUSiC
+                        ECORECORD LP
+                    </P>
+                    <button class="b3">order</button>
+                </div>
+                <div class="fourth">
+                    <img class="p4" src="https://www.coldplay.com/wp/wp-content/uploads/2024/10/FM.webp">
+                    <P class="t4">MOON MUSiC (FULL MOON EDITION)</P>
+                    <button class="b4">order</button>
+                </div>
+                <div class="fifth">
+                    <img class="p5" src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/Standard_CD_Packshot17.04.2024-1024x1024.webp">
+                    <P class="t5">MOON MUSiC ECOCD</P>
+                    <button class="b5">order</button>
+                </div>
+                <div class="sixth">
+                    <img class="p6" src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/Standard_Vinyl_Pink_220170226EC2NDIMAGE-1024x1024.webp">
+                    <P class="t6">MOON MUSiC 
+                        ECORECORD LP
+                    </P>
+                    <button class="b6">order</button>
+                </div>
+                
+            </div>
+    
+        </div>
+        <div class="heart">
+            <img class="heart" src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/CP_HEART.gif">
+        </div>
+        <div class="limg">
+            <img class="banner" src="https://www.coldplay.com/wp/wp-content/uploads/2024/10/f4-1-600x338.webp">
+        </div>
+        <img class="midimage" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/doodles.webp">
+        <div class="chaardiv">
+            <div class="firstdiv">
+                <img class="firstimg" src="https://www.coldplay.com/wp/wp-content/uploads/2024/10/well-this-is-going-to-be-fun-819x1024.webp">
+                <p class="fi">OCT 08, 2024</p>
+                <p class="fit">2025 North America dates announced</p>
+            </div>
+            <div class="secdiv">
+                <img class="secimg" src="https://www.coldplay.com/wp/wp-content/uploads/2024/10/as-explained-rather-wonderfully-by-will-and-jonny-on-the-listening-party-600x600.webp">
+                <p class="s">OCT 24, 2024</p>
+                <p class="sit">MOON MUSiC (Full Moon Edition) - out now!</p>
+            </div>
+            <div class="thirddiv">
+                <img class="thirdimg" src="https://www.coldplay.com/wp/wp-content/uploads/2024/10/ah-buenos-aires-its-so-nice-to-hear-you-again-alongside-MM-600x600.webp">
+                <p class="t">NOV 10, 2024</p>
+                <p class="tit">MOON MUSiC out today - get the TOUR EDITION</p>
+            </div>
+            <div class="fordiv">
+                <img class="forimg" src="https://www.coldplay.com/wp/wp-content/uploads/2024/09/sweet-popcorn-or-salty-popcorn-or-maybe-a-mix-of-both-819x1024.webp">
+                <p class="f">OCT 08, 2024</p>
+                <p class="fot">MOON MUSiC global theatrical listening event</p>
+            </div>
+        </div>
+        <div class="effectbottom2">
+            <img src="./bottom.png">
+        </div>
+        <div class="tourdateclass">
+            <img class="tourflower" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/scribble3.webp">
+            <h2 class="tourdates">TOUR DATES</h2>
+            <h2 class="seeall">See all</h2>
+        </div>
+        
+        <div class="table">
+            <div class="table1">
+                <p class="pt1">OCTOBER <span class="span1">30 </span><br>2025</p>
+                <p class="venue1"><span class="span1">MARVEL STADIUM </span><br>MELBOURNE</p>
+                <p class="more1"><span class="span1">+</span>MORE iNFO</p>
+            </div>
+            <div class="table2">
+                <p class="pt2">OCTOBER <span class="span2">31</span> <br>2025</p>
+                <p class="venue2"><span class="span2">MARVEL STADIUM</span><br>MELBOURNE</p>
+                <p class="more2"><span class="span2">+</span>MORE iNFO</p>
+            </div>
+            <div class="table3">
+                <p class="pt1">DECEMBER <sp class="span3">6</sp> <br>2025</p>
+                <P class="venue3"><sp class="span3">MARVEL STADIUM(EXTRA DATE)</sp><br> MELBOURNE</P>
+                <p class="more3"><span class="span3">+</span>MORE iNFO</p>
+            </div>
+            <div class="table4">
+                <p class="pt4">DECEMBER <sp class="span4">12</sp> <br>2025</p>
+                <P class="venue4"><span class="span4">MARVEL STADIUM(EXTRA DATE)</span><br> MELBOURNE</P>
+                <p class="more4"><sp class="span4">+</sp>MORE iNFO</p>
+            </div>
+            <div class="table5">
+                <p class="pt5">DECEMBER <sp class="span5">20</sp> <br>2025</p>
+                <p class="venue5"><sp class="span5">ACCOR STADIUM</sp> <br>SYDNEY</p>
+                <p class="more5"><span class="span5">+</span>MORE iNFO</p>
+            </div>
+            <div class="table6">
+                <p class="pt5">DECEMBER <sp class="span6">30</sp> <br>2025</p>
+                <p class="venue5"><sp class="span6">ACCOR STADIUM </sp><br>SYDNEY</p>
+                <p class="more6"><span class="span6">+</span>MORE iNFO</p>
+                <P></P>
+            </div>
+        </div>
+        <div class="effectbottom1">
+            <img src="./bottom.png">
+        </div>
+        <div class="mailer">
+            <p class="mailerhead">MAiLER</p>
+            <img class="bud" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/scribble3.webp">
+            <p class="mailerpara">Keep up to date with all the latest Coldplay news, gigs<br>
+                 and releases with our newsletter, the Coldplay Messenger.</p>
+                 <svg class="simpleheart" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.1126 37.6327C15.3744 38.1601 15.7695 38.6074 15.7681 39.055C15.7467 39.2828 15.6697 39.5019 15.5439 39.6931C15.4182 39.8843 15.2474 40.0418 15.0467 40.1517C14.7893 40.2286 14.518 40.2475 14.2524 40.2069C13.9869 40.1663 13.7336 40.0673 13.5109 39.917C13.3107 39.6714 13.0215 39.5149 12.7064 39.4817C12.3913 39.4484 12.0758 39.5412 11.8289 39.7397C11.1318 40.1243 10.3963 40.4344 9.63443 40.6651C9.29108 40.7583 8.8429 40.4825 8.448 40.3747C8.51138 39.9714 8.65417 39.5847 8.86812 39.2371C9.34656 38.7559 9.89179 38.346 10.487 38.0201C11.4228 37.4954 11.2908 37.0519 10.6875 36.2773C7.80242 32.5732 4.81363 28.9177 3.13196 24.4536C0.738204 18.4726 0.00141511 11.9567 0.999172 5.59215C1.77948 0.982672 5.97665 -0.993373 10.1646 1.20081C12.8812 2.74865 15.16 4.96134 16.7871 7.63122C18.4786 10.1692 19.8756 12.9001 21.4041 15.5477C21.4812 15.6809 21.5914 15.7958 21.8414 16.1274C22.5151 15.2134 23.0912 14.3484 23.7507 13.5538C25.7003 11.2036 27.6042 8.80996 29.684 6.57575C30.7993 5.34416 32.1076 4.30236 33.5577 3.49126C34.719 2.97402 35.9871 2.74179 37.2563 2.81389C38.7787 2.82559 39.4473 4.07429 39.9687 5.34131C41.4462 8.92355 41.014 12.4708 39.6404 15.9246C37.6079 21.3528 33.6625 25.8517 28.5461 28.5753C25.2426 30.3319 21.8605 31.9461 18.5407 33.6697C18.1073 33.969 17.7334 34.3464 17.438 34.7825C16.6488 35.7205 15.8856 36.6788 15.1129 37.6277M2.72387 8.08884C2.49235 12.6801 3.1249 17.2741 4.58863 21.632C6.19519 26.8032 9.28608 31.0708 12.7146 35.1438C13.2736 35.8089 13.6274 35.7644 14.1601 35.0193C14.7124 34.2049 15.4231 33.5103 16.2499 32.9768C17.9538 31.9536 19.817 31.1961 21.5301 30.1874C24.5016 28.4405 27.5107 26.7206 30.3158 24.7287C33.6285 22.2566 36.0707 18.7965 37.2905 14.8472C38.244 12.0933 38.7743 9.31025 37.5854 6.46913C37.5105 6.18814 37.3784 5.92567 37.1972 5.69824C37.016 5.47081 36.7896 5.28332 36.5325 5.14758C36.2753 5.01184 35.9928 4.93077 35.7028 4.90948C35.4128 4.88818 35.1215 4.92712 34.8473 5.02385C33.8272 5.34326 32.876 5.85113 32.0431 6.52114C30.7012 7.64889 29.4849 8.91799 28.415 10.3064C26.4517 12.9553 24.7045 15.7607 22.7883 18.4461C22.3829 18.9959 21.7944 19.3827 21.129 19.5368C20.2377 19.6903 20.16 18.8041 20 18.1498C19.9583 17.9963 19.9028 17.8469 19.8341 17.7035C18.2688 14.0494 16.2099 10.6272 13.7151 7.53231C12.2547 5.57595 10.3368 4.00761 8.12945 2.96472C5.22053 1.75983 3.10399 2.97572 2.83065 6.10871C2.77235 6.78158 2.75984 7.45986 2.72687 8.08899" fill="#7D78F4"></path>
+                    </svg>
+                 <button class="sign">
+                    <p class="text">sign up</p>
+                 </button>
+        </div>
+        <div class="app">
+            <p class="apphead">COLDPLAY WORLD TOUR APP</p>
+                <p class="apppara">THE ESSENTIAL COMPANION TO THE TOUR.<br>
+                     DOWNLOAD FOR FREE NOW.</p>
+                     <button class="DOWNLOAD">
+                        DOWNLOAD NOW
+                     </button>
+                     <img class="flower" src="https://www.coldplay.com/wp/wp-content/themes/coldplay-2024/dist/images/footer-flower.webp">
+        </div>
+        <div class="footer">
+            <ul class="footer-elements">
+                <div class="downimginfooter">
+                    <li><img src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/Group-1076-1.svg" alt=""></li>
+                <li><img src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/Group-1077.svg"></li>
+                <li><img src="https://www.coldplay.com/wp/wp-content/uploads/2024/06/Group-1078.svg"></li>
+            </div>
+                <li>PRIVACY POLICY |</li>
+                <li>TERMS & CONDITION |</li>
+                <li>COOKIES POLICY |</li>
+                <li>COOKIES SETTINGS |</li>
+            </ul>
+        </div>
+      </div>
+        </body>
+        <script>
+            const tourelements = document.getElementsByClassName("tour");
+             $(".tour").on("click",function(){
+                alert("hi ");
+            }) 
+            $(".news").on("click",function(){
+                window.location.href="";
+            });
+            $(".sign").on("click",function(){
+                alert("hello ");
+            })
+            const tour=document.getElementById("store5");
+            tour.addEventListener("click" ,()=>{
+                window.location.href="store.html";
+            })
+            const tour2=document.getElementById("signup4");
+            tour2.addEventListener("click" ,()=>{
+                window.location.href="signup.html";
+            })
+        </script>
+    </body>
+    </html>
+</body>

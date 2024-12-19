@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="store.css">
+    <style>
+       body{
+        background-color: #0c3874;
+       }
+       .topheading{
+        color: white;
+        font-weight: lighter;
+       }
+       .topheadingdiv{
+        display: flex;
+        justify-content: center;
+       }
+       hr{
+        width: 100%;
+        border: .01px solid rgb(90, 89, 89);
+       }
+       .coldimage{
+        display: flex;
+        justify-content: center;
+       }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+       .list{
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+       }
+       .topcoldplay{
+        transition: background-color 0.5s ease;
+        margin-top: 30px;
+        height: 120px;
+       }
+       
+       ul{
+        color: aliceblue;
+        list-style-type: none;
+       }
+       li{
+        display: inline-block;
+        padding: 10px;
+       }
+       li:hover{
+        background-color: #0b2c5a;
+       }
+       li {
+            display: inline-block;
+            padding: 10px;
+            position: relative; 
+        }
+        .navbar{
+            display: flex;
+            justify-content: center;
+        }
+        .row1{
+            display: flex;
+            gap: 5px;
+            margin-top: 480px;
+            justify-content: center;
+        }
+        .row2{
+            display: flex;
+            gap: 5px;
+            margin-top: 135px;
+            justify-content: center;  
+        }
+        .row3{
+            display: flex;
+            gap: 5px;
+            margin-top: 145px;
+            justify-content: center;  
+        }
+        .row4{
+            display: flex;
+            gap: 5px;
+            margin-top: 135px;
+            justify-content: center;  
+        }
+        .row5{
+            display: flex;
+            gap: 5px;
+            margin-top: 135px;
+            justify-content: center;  
+        }
+        .one,.two,.three,.four{
+            height: 430px;
+            width: 275px;
+            background-color: azure;
+            background-color: #0b2c5a;
+            transition: transform 0.3s ease;
+        }
+        .one:hover{
+             transform: scale(1.04);
+        }
+        .two:hover{
+             transform: scale(1.04);
+        }
+        .three:hover{
+             transform: scale(1.04);
+        }
+        .four:hover{
+             transform: scale(1.04);
+        }
+        .one{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .one:hover .twoimage{
+            transform: scale(1.9);
+            transition: 0.3s ease;
+        }
+        .one img{
+            position: absolute;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .firstimage{
+            height: 280px;
+            width: 315px;
+        }
+        .secondimage{
+            height: 280px;
+            width: 315px;
+        }
+        .secondimage{
+            opacity: 0;
+        }
+        .one:hover .secondimage{
+            opacity: 1;;
+        }
+        .one:hover .firstimage{
+            opacity: 0;
+        }
+        .two{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .twoimage{
+            height: 280px;
+            width: 280px;
+            position: absolute;
+            transition: transform 0.3s ease;
+        }
+        .three{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .three img{
+            transition: opacity 0.3s ease-in-out;
+            position: absolute;
+        }
+        .threeimgsecond{
+            opacity: 0;
+            height: 300px;
+            width: 300px;
+        }
+        .threeimgfirst{
+            height: 300px;
+            width: 300px;
+        }
+        .three:hover .threeimgsecond{
+            opacity: 1;
+        }
+        .three:hover .threeimgfirst{
+            opacity: 0;
+        }
+        .four{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .fourimg{
+            height: 300px;
+            width: 300px;
+            margin-bottom: 60px;
+            position: absolute;
+        }
+        .b1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            height: 30px;
+            width: 150px;
+            margin-top: 285px;
+            border: solid rgb(222, 70, 222);
+            border-width: 1px;
+            background-color: rgb(44, 44, 93,0.6);
+            color: white;
+            white-space: nowrap;
+            cursor: pointer;
+            position: absolute;
+        }
+        .b2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            height: 30px;
+            width: 150px;
+            margin-top: 285px;
+            border: solid rgb(222, 70, 222);
+            border-width: 1px;
+            background-color: rgb(44, 44, 93,0.6);
+            color: white;
+            white-space: nowrap;
+            cursor: pointer;
+            position: absolute;
+        }
+        .b3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            height: 30px;
+            width: 150px;
+            margin-top: 285px;
+            border: solid rgb(222, 70, 222);
+            border-width: 1px;
+            background-color: rgb(44, 44, 93,0.6);
+            color: white;
+            white-space: nowrap;
+            cursor: pointer;
+            position: absolute;
+        }
+        .b4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            height: 30px;
+            width: 150px;
+            margin-top: 285px;
+            border: solid rgb(222, 70, 222);
+            border-width: 1px;
+            background-color: rgb(44, 44, 93,0.6);
+            color: white;
+            white-space: nowrap;
+            cursor: pointer;
+            position: absolute;
+        }
+        .pone{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 335px;
+            margin-left:105px;
+            white-space: nowrap;
+            position: absolute;
+        }
+        .done{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 375px;
+            margin-left:105px;
+            white-space: nowrap;
+        }
+        .ptwo{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 335px;
+            margin-left:105px;
+            white-space: nowrap;
+            position: absolute;
+        }
+        .dtwo{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 375px;
+            margin-left:105px;
+            white-space: nowrap;
+        }
+        .pthree{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 335px;
+            margin-left:105px;
+            white-space: nowrap;
+            position: absolute;
+        }
+        .dthree{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 375px;
+            margin-left:105px;
+            white-space: nowrap;
+        }
+        .pfour{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 335px;
+            margin-left:105px;
+            white-space: nowrap;
+            position: absolute;
+        }
+        .dfour{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            margin-right: 100px;
+            margin-top: 375px;
+            margin-left:105px;
+            white-space: nowrap;
+        }
+.footer {
+    background-color: #0c3874;
+    color: #ffffff;
+    padding: px 0;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white; /* Optional: Accent color for headings */
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00; /* Highlight link on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="topheadingdiv">
+        <p class="topheading">SHOP EARLY! HOLIDAY 2024 DEADLINES EARLY | ORDERS MUST BE PLACED BEFORE FRIDAY 6th DEC(EU) AND MONDAY 2nd DEC(INTERNATIONAL)</p>
+    </div>
+    <hr>
+    <div class="topcoldplay">
+        <div class="coldimage">
+            <img height="50" src="https://eustore.coldplay.com/cdn/shop/files/mm-logo1_copy.png?v=1718604879&width=375">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>APPAREL</li>
+                <li>ACCESORIES</li>
+                <li>ART</li>
+                <li>MUSIC</li>
+                <li>SPECIAL COLLECTIONS</li>
+                <li>CURRENCY TOUR</li>
+            </ul>
+        </div>
+        <div>
+            <img class="banner" src="https://eustore.coldplay.com/cdn/shop/files/CP_Hero_1920x600_AML-KK_PO_111224-UPDATEDV2.png?v=1731945108&width=2000">
+        </div>
+    </div>
+    <div class="row1">
+        <div class="one">
+            <img class="firstimage" src="https://eustore.coldplay.com/cdn/shop/files/image00002.png?v=1731621847&width=990">
+            <img class="secondimage" src="https://eustore.coldplay.com/cdn/shop/files/image00001.png?v=1731621847&width=533">
+            <button class="b1">PRE ORDER NOW</button>
+            <p class="pone">
+                All My Love / The Karate Kid 7" Vinyl
+            </p>
+            <p class="done">€13,99 EUR</p>
+        </div>
+        <div class="two">
+            <img class="twoimage" src="https://eustore.coldplay.com/cdn/shop/files/MM-Digital-Full-Moon-Edition.png?v=1728013540&width=533">
+            <button class="b2">ORDER NOW</button>
+            <p class="ptwo">
+                MOON MUSiC FULL MOON EDITION <br>DIGITAL ALBUM DOWNLOAD
+            </p>
+            <p class="dtwo">€9,99 EUR</p>
+        </div>
+        <div class="three">
+            <img class="threeimgfirst" src="https://eustore.coldplay.com/cdn/shop/files/Standard_CD_Packshot17.04.2024.png?v=1718613942&width=990">
+            <img class="threeimgsecond" src="https://eustore.coldplay.com/cdn/shop/files/Standard_CD_20170224EC_0c724829-d3b5-482c-8f29-db9a2edb6eb7.png?v=1718613956&width=533">
+            <button class="b3">PRE ORDER NOW</button>
+            <p class="pthree">
+                MOON MUSiC ECOCD
+            </p>
+            <p class="dthree">€14,99 EUR</p>
+        </div>
+        <div class="four">
+            <img class="fourimg" src="https://eustore.coldplay.com/cdn/shop/files/MM-Digital-Standard.png?v=1727566341&width=533">
+            <button class="b2">ORDER NOW</button>
+            <p class="pfour">
+                MOON MUSiC DIGITAL DOWNLOAD
+            </p>
+            <p class="dfour">€8,99 EUR</p>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="one">
+            <img class="firstimage" src="https://eustore.coldplay.com/cdn/shop/files/all_my_love_mug.png?v=1733438992&width=360">
+            <img class="secondimage" src="https://eustore.coldplay.com/cdn/shop/files/all_my_love_mug.png?v=1733438992&width=360">
+            <button class="b1">PRE ORDER NOW</button>
+            <p class="pone">
+                All My Love / The Karate Kid 7" Vinyl
+            </p>
+            <p class="done">€13,99 EUR</p>
+        </div>
+        <div class="two">
+            <img class="twoimage" src="https://eustore.coldplay.com/cdn/shop/files/ILWIL-TEE-FRONT.png?v=1730377273&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="ptwo">
+                MOON MUSiC FULL MOON EDITION <br>DIGITAL ALBUM DOWNLOAD
+            </p>
+            <p class="dtwo">€9,99 EUR</p>
+        </div>
+        <div class="three">
+            <img class="threeimgfirst" src="https://eustore.coldplay.com/cdn/shop/files/owwfront.png?v=1730377277&width=360">
+            <img class="threeimgsecond" src="https://eustore.coldplay.com/cdn/shop/files/owwfront.png?v=1730377277&width=360">
+            <button class="b3">PRE ORDER NOW</button>
+            <p class="pthree">
+                MOON MUSiC ECOCD
+            </p>
+            <p class="dthree">€14,99 EUR</p>
+        </div>
+        <div class="four">
+            <img class="fourimg" src="https://eustore.coldplay.com/cdn/shop/files/coldplaytotefront.png?v=1730377270&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="pfour">
+                MOON MUSiC DIGITAL DOWNLOAD
+            </p>
+            <p class="dfour">€8,99 EUR</p>
+        </div>
+    </div>
+    <div class="row3">
+        <div class="one">
+            <img class="firstimage" src="https://eustore.coldplay.com/cdn/shop/files/blue-tee-update-front.png?v=1718594281&width=990">
+            <img class="secondimage" src="https://eustore.coldplay.com/cdn/shop/files/blue-tee-update-back.png?v=1718594281&width=360">
+            <button class="b1">PRE ORDER NOW</button>
+            <p class="pone">
+                All My Love / The Karate Kid 7" Vinyl
+            </p>
+            <p class="done">€13,99 EUR</p>
+        </div>
+        <div class="two">
+            <img class="twoimage" src="https://eustore.coldplay.com/cdn/shop/files/WP_ALL_PS_VINYLEX.png?v=1723059488&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="ptwo">
+                MOON MUSiC FULL MOON EDITION <br>DIGITAL ALBUM DOWNLOAD
+            </p>
+            <p class="dtwo">€9,99 EUR</p>
+        </div>
+        <div class="three">
+            <img class="threeimgfirst" src="https://eustore.coldplay.com/cdn/shop/files/white-tee-front.png?v=1718594285&width=990">
+            <img class="threeimgsecond" src="https://eustore.coldplay.com/cdn/shop/files/col-white-tee-back.png?v=1718594285&width=360">
+            <button class="b3">PRE ORDER NOW</button>
+            <p class="pthree">
+                MOON MUSiC ECOCD
+            </p>
+            <p class="dthree">€14,99 EUR</p>
+        </div>
+        <div class="four">
+            <img class="fourimg" src="https://eustore.coldplay.com/cdn/shop/files/finalprayhf.png?v=1723125566&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="pfour">
+                MOON MUSiC DIGITAL DOWNLOAD
+            </p>
+            <p class="dfour">€8,99 EUR</p>
+        </div>
+    </div>
+    <div class="row4">
+        <div class="one">
+            <img class="firstimage" src="https://eustore.coldplay.com/cdn/shop/files/COLDPLAY-NAVYLONGSLEEVE_FRONT_7_38bf7006-c6ad-49b7-9f88-9f019ba51f3f.png?v=1718594289&width=990">
+            <img class="secondimage" src="https://eustore.coldplay.com/cdn/shop/files/COLDPLAY-NAVYLONGSLEEVE_BACK_7_34e8c288-1996-41bd-922d-b69bd633eadb.png?v=1718594289&width=360">
+            <button class="b1">PRE ORDER NOW</button>
+            <p class="pone">
+                All My Love / The Karate Kid 7" Vinyl
+            </p>
+            <p class="done">€13,99 EUR</p>
+        </div>
+        <div class="two">
+            <img class="twoimage" src="https://eustore.coldplay.com/cdn/shop/files/mmposter_c440f5ce-b94e-4495-8cbb-38d65c2afd2c.png?v=1718594302&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="ptwo">
+                MOON MUSiC FULL MOON EDITION <br>DIGITAL ALBUM DOWNLOAD
+            </p>
+            <p class="dtwo">€9,99 EUR</p>
+        </div>
+        <div class="three">
+            <img class="threeimgfirst" src="https://eustore.coldplay.com/cdn/shop/files/7323CA.JP06V2-WEBv5_7.png?v=1721675114&width=990">
+            <img class="threeimgsecond" src="https://eustore.coldplay.com/cdn/shop/files/7323CA.JP06V2-WEB2-v2_19.png?v=1721664050&width=360">
+            <button class="b3">PRE ORDER NOW</button>
+            <p class="pthree">
+                MOON MUSiC ECOCD
+            </p>
+            <p class="dthree">€14,99 EUR</p>
+        </div>
+        <div class="four">
+            <img class="fourimg" src="https://eustore.coldplay.com/cdn/shop/files/heart-socks_9ca53f76-90d2-43ec-af78-26ef25eadfea.png?v=1718594297&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="pfour">
+                MOON MUSiC DIGITAL DOWNLOAD
+            </p>
+            <p class="dfour">€8,99 EUR</p>
+        </div>
+    </div>
+    <div class="row5">
+        <div class="one">
+            <img class="firstimage" src="https://eustore.coldplay.com/cdn/shop/files/DUBLIN-EVENTTEE-080824.png?v=1723126539&width=990">
+            <img class="secondimage" src="https://eustore.coldplay.com/cdn/shop/files/EVENT-TEE-BK-030624_5a5fa44f-7ccc-40fd-8c47-1b5e291eef98.png?v=1723126552&width=360">
+            <button class="b1">PRE ORDER NOW</button>
+            <p class="pone">
+                All My Love / The Karate Kid 7" Vinyl
+            </p>
+            <p class="done">€13,99 EUR</p>
+        </div>
+        <div class="two">
+            <img class="twoimage" src="https://eustore.coldplay.com/cdn/shop/files/7463CA.RJ01V1-FT.png?v=1720568179&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="ptwo">
+                MOON MUSiC FULL MOON EDITION <br>DIGITAL ALBUM DOWNLOAD
+            </p>
+            <p class="dtwo">€9,99 EUR</p>
+        </div>
+        <div class="three">
+            <img class="threeimgfirst" src="https://eustore.coldplay.com/cdn/shop/files/tb4amended1stimage.png?v=1718623110&width=990">
+            <img class="threeimgsecond" src="https://eustore.coldplay.com/cdn/shop/files/COLTOURBOOK2_3rd_image_d504428e-2127-453d-92b5-973649077162.png?v=1718623121&width=360">
+            <button class="b3">PRE ORDER NOW</button>
+            <p class="pthree">
+                MOON MUSiC ECOCD
+            </p>
+            <p class="dthree">€14,99 EUR</p>
+        </div>
+        <div class="four">
+            <img class="fourimg" src="https://eustore.coldplay.com/cdn/shop/files/finalpraytf.png?v=1723125466&width=360">
+            <button class="b2">ORDER NOW</button>
+            <p class="pfour">
+                MOON MUSiC DIGITAL DOWNLOAD
+            </p>
+            <p class="dfour">€8,99 EUR</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>about us</h2>
+                <p>
+                    This is the official Coldplay Store, designed to offer fans
+                    exclusive merchandise and albums. 
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Email: support@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 YourWebsite | All Rights Reserved
+        </div>
+    </footer>
+    
+
+</body>
